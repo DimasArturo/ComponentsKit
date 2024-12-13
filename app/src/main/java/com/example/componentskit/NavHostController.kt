@@ -6,11 +6,13 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.componentskit.components.BadgeScreen
 import com.example.componentskit.components.ButtonsScreen
+import com.example.componentskit.components.CardScreen
 import com.example.componentskit.components.CheckBoxScreen
 import com.example.componentskit.components.DropDownScreen
 import com.example.componentskit.components.IconsScreen
 import com.example.componentskit.components.ImageScreen
 import com.example.componentskit.components.IndicatorsScreen
+import com.example.componentskit.components.PagerScreen
 import com.example.componentskit.components.RadioScreen
 import com.example.componentskit.components.SliderScreen
 import com.example.componentskit.components.SwitchScreen
@@ -34,5 +36,7 @@ fun NavHostController(){
         composable("badge"){BadgeScreen(navController)}
         composable("slider"){SliderScreen(navController)}
         composable("dropdown"){DropDownScreen(navController)}
+        composable("card"){CardScreen(navController)}
+        composable ("pager"){PagerScreen(navController)}
     }
 }

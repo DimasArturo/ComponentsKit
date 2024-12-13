@@ -12,8 +12,10 @@ import androidx.compose.material.icons.filled.CheckBox
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.Image
+import androidx.compose.material.icons.filled.Inbox
 import androidx.compose.material.icons.filled.LinearScale
 import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.Pages
 import androidx.compose.material.icons.filled.RadioButtonChecked
 import androidx.compose.material.icons.filled.SpaceBar
 import androidx.compose.material.icons.filled.SwipeLeft
@@ -114,6 +116,18 @@ fun HomeScreen(navController: NavHostController){
                 Icons.Default.ArrowDropDown,
                 Modifier.clickable{
                     navController.navigate("dropdown")
+                }
+            )
+            ItemComponent("Card",
+                Icons.Default.Inbox,
+                Modifier.clickable{
+                    navController.navigate("card")
+                }
+            )
+            ItemComponent("Pager",
+                Icons.Default.Pages,
+                Modifier.clickable{
+                    navController.navigate("pager")
                 }
             )
         }
