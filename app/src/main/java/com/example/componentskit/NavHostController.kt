@@ -5,9 +5,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.componentskit.components.BadgeScreen
+import com.example.componentskit.components.BottomAppBarScreen
 import com.example.componentskit.components.ButtonsScreen
 import com.example.componentskit.components.CardScreen
 import com.example.componentskit.components.CheckBoxScreen
+import com.example.componentskit.components.DrawerScreen
 import com.example.componentskit.components.DropDownScreen
 import com.example.componentskit.components.IconsScreen
 import com.example.componentskit.components.ImageScreen
@@ -38,5 +40,7 @@ fun NavHostController(){
         composable("dropdown"){DropDownScreen(navController)}
         composable("card"){CardScreen(navController)}
         composable ("pager"){PagerScreen(navController)}
+        composable("bottomAppBar"){BottomAppBarScreen(navController)}
+        composable("drawer"){DrawerScreen(navController)}
     }
 }

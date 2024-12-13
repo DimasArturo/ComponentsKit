@@ -14,11 +14,13 @@ import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.Image
 import androidx.compose.material.icons.filled.Inbox
 import androidx.compose.material.icons.filled.LinearScale
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Pages
 import androidx.compose.material.icons.filled.RadioButtonChecked
 import androidx.compose.material.icons.filled.SpaceBar
 import androidx.compose.material.icons.filled.SwipeLeft
+import androidx.compose.material.icons.filled.VerticalAlignBottom
 import androidx.compose.material.icons.filled.WifiProtectedSetup
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -128,6 +130,18 @@ fun HomeScreen(navController: NavHostController){
                 Icons.Default.Pages,
                 Modifier.clickable{
                     navController.navigate("pager")
+                }
+            )
+            ItemComponent("BottomAppBar",
+                Icons.Default.VerticalAlignBottom,
+                Modifier.clickable{
+                    navController.navigate("bottomAppBar")
+                }
+            )
+            ItemComponent("Drawer",
+                Icons.Default.Menu,
+                Modifier.clickable{
+                    navController.navigate("drawer")
                 }
             )
         }
